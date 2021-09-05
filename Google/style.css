@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: arial,sans-serif;
+    /* border: 1px solid red; */
+}
+html{
+min-width: 456px;
+max-height: 475px;
+}
+.container{
+    min-height: 430px;
+    flex-direction: column;
+}
+.header{
+    min-height:3rem;
+    padding: 6px;
+    flex-direction: row-reverse;
+}
+.navbar{
+    margin: 0.5rem 0.25rem;
+    height: 3rem;
+    flex-direction: row-reverse;
+    align-items: center;
+    display: flex;
+}
+.navbar a{
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    font-size: 0.8rem;
+}
+.navbar a:hover{
+    text-decoration: underline;
+}
+.navbar a.nav-btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.navbar a.nav-btn:hover{
+    background: rgba(128, 128, 128, 0.15);
+}
+.navbar .material-icons{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.nav-btn:hover{
+    background: rgba(128, 128, 128, 0.25);
+    border-radius: 50%;
+}
+.google-logo{
+    margin: 0.2rem auto;
+    height: 25vh;
+    max-height: 116px;
+    min-height: 80px;
+}
+.search{
+    margin: 1rem auto;
+    width: 60%;
+    max-width:560px;
+    min-width: 360px;
+}
+.search-bar{
+    height: 2.5rem;
+    margin: 0.5rem auto;
+    display: flex;
+    border-radius: 2rem;
+    border: 1px solid rgba(128, 128, 128, 0.1);
+    cursor: text;
+    max-width: 35rem;
+}
+.search-bar:hover{
+    box-shadow: 2px 2px 4px rgba(128,128,128,0.25),-2px 2px 4px rgba(128,128,128,0.25),2px -2px 4px rgba(128,128,128,0.25),-2px -2px 4px rgba(128,128,128,0.25);
+}
+.search-bar div.material-icons{
+    width: 2.5rem;
+    padding: 0 0.5rem;
+    font-size: 1.3rem;
+    margin: auto;
+    color: rgba(128, 128, 128, 0.8);
+}
+.search-text{
+    width: 85%;
+}
+.btns{
+    height: 3rem;
+    margin: 1rem auto 0 auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 2.25rem;
+    margin: 0 1.5rem;
+    font-size: 0.8rem;
+    width: max-content;
+    background: #F8F9F8;
+    border: none;
+    padding: 0rem 1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+button:hover{
+    box-shadow: 0.5px 0.5px 2px rgba(128,128,128,0.25),-0.5px 0.5px 2px rgba(128,128,128,0.25),0.5px -0.5px 2px rgba(128,128,128,0.25),-0.5px -0.5px 2px rgba(128,128,128,0.25);
+}
+.search-text{
+    overflow: hidden;
+}
+#search-text{
+    text-align: left;
+    font-size: 1.2rem;
+    resize: none;
+    margin-top: 0.5rem;
+    width: 100%;
+    border: none;
+}
+textarea{
+    font-size: 0.5rem;
+}
+textarea:focus,input:focus,select:focus{
+    outline: none;
+}
+.languages{
+    margin: 2rem 0;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    text-align: center;
+}
+.languages a{
+    margin: 0 0.3rem;
+    text-decoration: none;
+    color: blue;
+}
+.languages a:hover{
+    text-decoration: underline;
+}
+.languages a:visited{
+    color: #660099;
+}
+.countries{
+    display: flex;
+    text-decoration: none;
+    margin: 1rem 2rem;
+    color: #0000008A;
+}
+.nav-img{
+    border-radius: 50%;
+}
+.flex{
+    display: flex;
+}
+.acc-img{
+    height: 32px;
+    width: 32px;
+}
+.apps{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.middle{
+    min-height: 20%;
+}
+footer{
+    background: #F8F9F8;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    min-width: 460px;
+}
+.services{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: left;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    color: #0000008A;
+    justify-content: space-around;
+}
+.services a{
+    color: #0000008A;
+    text-decoration: none;
+    margin: 0.5rem 0.8rem;
+}
+.services-1{
+    display: inline;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+.services-2{
+    display: inline;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.services-2 a:hover,.services-1 a:hover{
+    text-decoration: underline;
+}
+@media only screen and (min-width: 1000px) {
+    .services{
+        justify-content: space-between;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width:700px) {
+    .services{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
